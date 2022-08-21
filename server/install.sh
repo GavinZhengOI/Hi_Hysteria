@@ -577,7 +577,7 @@ function downloadHysteriaCore(){
 	echo -e "The Latest hysteria version:"`echoColor red "${version}"`"\nDownload..."
     get_arch=`arch`
     if [ $get_arch = "x86_64" ];then
-        wget -q -O /etc/hihy/bin/appS --no-check-certificate https://github.com/HyNetwork/hysteria/releases/download/${version}/hysteria-linux-amd64
+        wget -q -O /etc/hihy/bin/appS --no-check-certificate https://hub.fastgit.xyz/HyNetwork/hysteria/releases/download/${version}/hysteria-linux-amd64
     elif [ $get_arch = "aarch64" ];then
         wget -q -O /etc/hihy/bin/appS --no-check-certificate https://github.com/HyNetwork/hysteria/releases/download/${version}/hysteria-linux-arm64
     elif [ $get_arch = "mips64" ];then
